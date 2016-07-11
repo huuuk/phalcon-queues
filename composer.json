@@ -1,0 +1,14 @@
+{
+    "name": "huuuk/phalcon-queues",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Kozhevnikov",
+            "email": "kozhevnikov.1250@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": { "Huuuk\\Queues\\": "src/" }
+    }
+}
