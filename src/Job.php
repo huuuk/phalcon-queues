@@ -6,8 +6,9 @@ use Phalcon\DiInterface;
 /**
 * 
 */
-abstract class Queue implements InjectionAwareInterface
+abstract class Job implements InjectionAwareInterface
 {
+
     protected $_di;
 
     public function setDi( DiInterface $di )
@@ -20,6 +21,6 @@ abstract class Queue implements InjectionAwareInterface
         return $this->_di;
     }
 
-    abstract public function push($job);
-
+    abstract public function handle();
+    
 }

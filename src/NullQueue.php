@@ -6,9 +6,9 @@ namespace Huuuk\Queues;
 */
 class NullQueue extends Queue
 {
-	
-	public function push($job)
-	{
-		// To infinity and beyond 
-	}
+    
+    public function push($job)
+    {
+        // To infinity and beyond 
+    }
 }
