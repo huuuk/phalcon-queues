@@ -19,7 +19,7 @@ class QueueManager
     /**
      * Name of 'fake' driver
      */
-    const FAKE_QUEUE = null;
+    const NULL_QUEUE = null;
 
     /**
      * Queue config
@@ -43,7 +43,7 @@ class QueueManager
             }
         }
         else {
-            $this->config = new \Phalcon\Config( [ 'driver' => static::FAKE_QUEUE ] );
+            $this->config = new \Phalcon\Config( [ 'driver' => static::NULL_QUEUE ] );
         }
 
 

@@ -94,7 +94,7 @@ class DatabaseQueue extends Queue
         return "SELECT * FROM {$this->getTable()} 
                 WHERE failed <> 1 AND 
                       done = 0 AND
-                      (available_at <= :now  AND attemps <= :max_tries AND queue IN (:queues))
+                      (available_at <= :now  AND attemps < :max_tries AND queue IN (:queues))
                 ORDER BY created_at";
     }
 

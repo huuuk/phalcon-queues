@@ -38,7 +38,7 @@ class SyncQueue extends Queue
      * Since we process all jobs synchronusly,
      * no needs to retreive jobs from somewhere
      */
-    public function pull()
+    public function pull($params)
     {
 
     }

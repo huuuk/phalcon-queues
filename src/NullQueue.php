@@ -12,7 +12,7 @@ class NullQueue extends Queue
      */
     public function getType()
     {
-        return QueueManager::FAKE_QUEUE;
+        return QueueManager::NULL_QUEUE;
     }
     
     /**
@@ -26,7 +26,7 @@ class NullQueue extends Queue
     /**
      * Nothing to pull in this queue type
      */
-    public function pull()
+    public function pull($params)
     {
     	// 
     }
