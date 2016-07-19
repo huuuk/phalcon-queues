@@ -72,7 +72,7 @@ class QueueTask extends Task implements InjectionAwareInterface
         $this->checkQueueType();
 
         $params = [
-            'queues'    => implode(',', $config['queues']),
+            'queues'    => implode( ',', explode(',', $config['queues']) ),
             'max_tries' => $config['max_tries'],
         ];
         while (true) {
