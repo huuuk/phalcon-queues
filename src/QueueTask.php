@@ -30,7 +30,7 @@ class QueueTask extends Task implements InjectionAwareInterface
      * @var array
      */
     protected $defaultConfig = [
-        'queues'            => ['default'],
+        'queues'            => 'default',
         'max_tries'         => 5,
         'try_again_timeout' => 10,
         'sleep'             => 5,
